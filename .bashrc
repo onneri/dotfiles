@@ -119,4 +119,4 @@ fi
 alias aliasw='vim + ~/.bashrc'
 alias aliasl='source .bashrc'
 alias notes='vim ~/notes.txt'
-alias dotfiles='cd dotfiles'
+alias backup='cd dotfiles && git add . && git commit -m "dotfiles update" && git push origin develop'
