@@ -117,6 +117,6 @@ if ! shopt -oq posix; then
 fi
 #fneri alias commands
 alias aliasw='vim + ~/.bashrc'
-alias aliasr='source .bashrc'
+alias aliasl='source .bashrc'
 alias notes='vim ~/notes.txt'
 alias dotfiles='cd dotfiles'
