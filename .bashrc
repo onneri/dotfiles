@@ -115,8 +115,14 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+export JAVA_HOME=/opt/jdk
+export PATH=$JAVA_HOME:$PATH
+export M2_HOME=/opt/apache-maven-3.5.2
+export M2=$M2_HOME/bin
+export PATH=$M2:$PATH
 #fneri alias commands
 alias aliasw='vim + ~/.bashrc'
 alias aliasl='source .bashrc'
 alias notes='vim ~/notes.txt'
-alias backup='cd dotfiles && cp ~/.bash_profile ./.bash_profile && cp ~/.bashrc ./.bashrc && cp ~/.gitconfig ./.gitconfig && git add . && git commit -m "dotfiles update" && git push origin develop && gdrive update 0B2yQ1g_OWB9mZmdIRUQyeXNYb1U ~/notes.txt && cd'
+alias backup='cd dotfiles && cp ~/.bash_profile ~/dotfiles/ && cp ~/.bashrc ~/dotfiles/ && cp ~/.profile ~/dotfiles/ && cp ~/.gitconfig ~/dotfiles/ && git add . && git commit -m "dotfiles update" && git push origin develop && gdrive update 0B2yQ1g_OWB9mZmdIRUQyeXNYb1U ~/notes.txt && cd'
+alias near=''
