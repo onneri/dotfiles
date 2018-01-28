@@ -1,11 +1,7 @@
-
-#fneri alias commands
-alias aliasw='vim + ~/dotfiles/'
-alias aliasr='source ~/.bash_profile'
-alias notes='vim ~/notes.txt'
-alias backup='gdrive update 1yPKnJwllu5WSny0nKB_EVi7EEWUjHgYR ~/notes.txt && gdrive update 1By9LIy-a25k0TgLh35wtnLrqUA8s-VUS ~/journal.txt && cd ~/dotfiles && cp ~/.bash_profile ~/dotfiles/ && cp ~/.gitconfig ~/dotfiles/ && git add . && git commit -m "dotfiles update" && git push origin develop && cd'
-alias getbackup='cd && gdrive download 1yPKnJwllu5WSny0nKB_EVi7EEWUjHgYR && gdrive download 1By9LIy-a25k0TgLh35wtnLrqUA8s-VUS'
-alias dotfiles='cd ~/dotfiles'
-if [ -f ~/.git-completion.bash ]; then
-  . ~/.git-completion.bash
+#source /home/francisco/.rvm/scripts/rvm
+if [ -f ~/.bashrc ]; then
+    . ~/.bashrc
 fi
+
+export NVM_DIR="/home/francisco/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm

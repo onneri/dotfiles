@@ -125,9 +125,9 @@ alias aliasw='vim + ~/.bashrc'
 alias aliasl='source ~/.bashrc'
 alias notes='vim ~/notes.txt'
 alias journal='vim ~/journal.txt'
-alias backup='gdrive update 1yPKnJwllu5WSny0nKB_EVi7EEWUjHgYR ~/notes.txt && gdrive update 1By9LIy-a25k0TgLh35wtnLrqUA8s-VUS ~/journal.txt && cd ~/dotfiles && cp ~/.bash_profile ~/dotfiles/ && cp ~/.bashrc ~/dotfiles/ && cp ~/.profile ~/dotfiles/ && cp ~/.gitconfig ~/dotfiles/ && git add . && git commit -m "dotfiles update" && git push origin develop && cd' 
+alias backup='gdrive update 1yPKnJwllu5WSny0nKB_EVi7EEWUjHgYR ~/notes.txt && gdrive update 1By9LIy-a25k0TgLh35wtnLrqUA8s-VUS ~/journal.txt && cd ~/dotfiles && cp ~/.bash_profile ~/dotfiles/ && cp ~/.profile ~/dotfiles/ && cp ~/.gitconfig ~/dotfiles/ && git add . && git commit -m "dotfiles update" && git push origin develop && cd' 
 alias onwww='cd /var/www/html'
-alias getbackup='cd && gdrive download 1yPKnJwllu5WSny0nKB_EVi7EEWUjHgYR && gdrive download 1By9LIy-a25k0TgLh35wtnLrqUA8s-VUS'
+alias getbackup='cd && gdrive download --force 1yPKnJwllu5WSny0nKB_EVi7EEWUjHgYR && gdrive download 1--force By9LIy-a25k0TgLh35wtnLrqUA8s-VUS'
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
