@@ -1,0 +1,9 @@
+source ~/.profile
+#fneri alias commands
+alias aliasw='vim + ~/dotfiles/'
+alias aliasr='source .bash_profile'
+alias notes='vim ~/notes.txt'
+alias dotfiles='cd dotfiles'
+if [ -f ~/.git-completion.bash ]; then
+  . ~/.git-completion.bash
+fi
