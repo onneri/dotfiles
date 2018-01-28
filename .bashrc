@@ -115,8 +115,19 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+export JAVA_HOME=/opt/jdk
+export PATH=$JAVA_HOME:$PATH
+export M2_HOME=/opt/apache-maven-3.5.2
+export M2=$M2_HOME/bin
+export PATH=$M2:$PATH
 #fneri alias commands
 alias aliasw='vim + ~/.bashrc'
-alias aliasr='source .bashrc'
+alias aliasl='source .bashrc'
 alias notes='vim ~/notes.txt'
-alias dotfiles='cd dotfiles'
+alias journal='vim ~/journal.txt'
+alias backup='gdrive update 1yPKnJwllu5WSny0nKB_EVi7EEWUjHgYR ~/notes.txt && gdrive update 1By9LIy-a25k0TgLh35wtnLrqUA8s-VUS ~/journal.txt && cd ~/dotfiles && cp ~/.bash_profile ~/dotfiles/ && cp ~/.bashrc ~/dotfiles/ && cp ~/.profile ~/dotfiles/ && cp ~/.gitconfig ~/dotfiles/ && git add . && git commit -m "dotfiles update" && git push origin develop && cd' 
+alias onwww='cd /var/www/html'
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
