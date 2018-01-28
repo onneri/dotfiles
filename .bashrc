@@ -126,7 +126,7 @@ alias aliasl='source .bashrc'
 alias notes='vim ~/notes.txt'
 alias journal='vim ~/journal.txt'
 alias backup='gdrive update 1yPKnJwllu5WSny0nKB_EVi7EEWUjHgYR ~/notes.txt && gdrive update 1By9LIy-a25k0TgLh35wtnLrqUA8s-VUS ~/journal.txt && cd ~/dotfiles && cp ~/.bash_profile ~/dotfiles/ && cp ~/.bashrc ~/dotfiles/ && cp ~/.profile ~/dotfiles/ && cp ~/.gitconfig ~/dotfiles/ && git add . && git commit -m "dotfiles update" && git push origin develop && cd' 
-alias near=''
+alias onwww='cd /var/www/html'
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
